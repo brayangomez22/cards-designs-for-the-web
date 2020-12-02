@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #008cff;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .box{
+    position: relative;
+    width: 250px;
+    height: 200px;
+    margin: 30px;
+    font-size: 2em;
+    background: #008cff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(0,0,0,0.1);
+}
+
+.container .box.shadow1{
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+                15px 15px 15px  rgba(0,0,0,0.1);
+}
+
+.container .box.shadow2{
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+                15px 15px 15px  rgba(0,0,0,0.1), 
+                inset -10px -10px 10px rgba(255, 255, 255, 0.2),
+                inset 15px 15px 15px  rgba(0,0,0,0.1);
+}
+
+.container .box.shadow3{
+    box-shadow: inset 4px 4px 5px rgba(255, 255, 255, 0.3),
+                inset -4px -4px 5px rgba(0,0,0,0.1), 
+                10px 40px 40px  rgba(0,0,0,0.1);
+}
+
+.container .box.shadow4{
+    border: 10px solid #008cff;
+    box-shadow: -10px -10px 10px rgba(255, 255, 255, 0.2),
+                15px 15px 15px  rgba(0,0,0,0.1), 
+                inset -10px -10px 10px rgba(255, 255, 255, 0.2),
+                inset 15px 15px 15px  rgba(0,0,0,0.1);
+}
